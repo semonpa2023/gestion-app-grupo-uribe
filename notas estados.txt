@@ -1,0 +1,33 @@
+
+
+
+
+
+
+hooks -> Funciones predefinidas de react solo se llaman y se 	configuran para su necesidad.
+	- useState -> Define el estado de un componente o 	elemento dentro del componente
+	-useEffect -> Define un efecto o configuracion o 	aplicacion segun el estado
+	-useContext -> Define informmacion global dentro de 	la app
+
+Reglas y normas o mandamientos del useState o estado
+
+1- Se tiene que importar si o si dentro del componente a utilizar
+2- Se definen dentro de la funcion y antes del retorno
+3- Se debe definir con un estado o valor por defecto
+
+ESTADO:El estado es una variable que almacena un arreglo de una posicion asignado al hook useState.(Se hace por cada elemento que va a cambiar)
+El arreglo del estado tiene dos elementos:
+La posicion cero almacena la variable del estado
+La posicion uno almacena la funcion de cambio
+
+shift+alt+flecha arriba
+
+getters--> Buscar infomacion
+setters---> Manilpular informacion
+
+function (){}-> Funcion Regular
+() => {} -> Funcion Flecha
+
+se puede llamar e, evnt, event
+
+          
