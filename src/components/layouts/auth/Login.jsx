@@ -1,6 +1,7 @@
 import userLogo from '../../../assets/user.avif'
 import { useState } from 'react';
 import { usuarios } from "../../database/dataBase"
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 
@@ -8,6 +9,7 @@ const Login = () => {
   const [getUsuario, setUsuario] = useState(null);
   const [getContrasena, setContrasena] = useState("");
   const [getCorreo, setCorreo] = useState("");
+  let redireccion = useNavigate()
 
   const buscarUsuario = () => {
     let estado = usuarios.some((usuario) => {
@@ -27,6 +29,7 @@ const Login = () => {
         text: "Es Hora De Fumar Weed!",
         icon: "success"
       });
+      redireccion("/home")
     } else {
       Swal.fire({
         icon: "error",
